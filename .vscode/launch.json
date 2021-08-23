@@ -1,0 +1,63 @@
+{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+
+
+    "configurations": [
+        // {
+        //     "name": "Launch Chrome",
+        //     "request": "launch",
+        //     "type": "chrome",
+
+        //     "url": "http://localhost:8081",
+        //     "webRoot": "${workspaceFolder}",
+        //     "preLaunchTask": "debug"
+        // },
+        {
+            "name": "deuggger file",    // 
+            "program": "${file}",
+            "request": "launch",
+            "skipFiles": [              // 忽略文件，internals-内部构件
+                "<node_internals>/**"
+            ],
+            "type": "node",
+            "cwd": "${workspaceFolder}/examples/commonjs"     // 运行程序的上下文目录
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "启动程序",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}\\dev"
+        },
+        {
+            "name": "dev",    // 
+            "request": "launch",
+            "runtimeExecutable": "npm", //runtimeExecutable表示要使用的运行时，默认为node，这里我们配置成了npm
+            "runtimeArgs": [
+              "run-script", "dev"    //这里的dev就对应package.json中的scripts中的dev
+            ],
+            "skipFiles": [                  
+            //    "<node_internals>/**"
+            ],
+      
+            "type": "node"
+        },
+        {
+            "name": "build",    // 
+            "request": "launch",
+            "runtimeExecutable": "npm", //runtimeExecutable表示要使用的运行时，默认为node，这里我们配置成了npm
+            "runtimeArgs": [
+              "run-script", "build"    //这里的dev就对应package.json中的scripts中的dev
+            ],
+            "skipFiles": [                  
+                // "<node_internals>/**"
+            ],
+            "type": "node"
+        }
+    ]
+}
