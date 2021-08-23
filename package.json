@@ -28,7 +28,6 @@
     "client-dist",
     "public",
     "views"
-    
   ],
   "dependencies": {
     "axios": "^0.21.1",
@@ -67,12 +66,12 @@
     "gulp": "4.0.0",
     "gulp-babel": "7.0.1",
     "node-sass": "^4.14.1",
-    "style-loader": "^3.1.0",
     "portfinder": "^1.0.28",
     "postcss-import": "^11.1.0",
     "postcss-loader": "^2.1.6",
     "postcss-url": "^7.3.2",
     "sass-loader": "^7.3.1",
+    "style-loader": "^3.1.0",
     "url-loader": "^0.6.2",
     "vue-loader": "^13.7.3",
     "vue-template-compiler": "^2.6.14",

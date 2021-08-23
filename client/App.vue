@@ -4,7 +4,10 @@
       <!-- base -->
       <div class="" v-html="readmeData.baseDataHTML"/>
       <!-- title -->
-      <h1 class = "title" style="">generate by readme-webpack-plugin</h1>
+      <h1 class = "title" style="">
+        <img src="./logo.png" alt="">
+        generate by readme-webpack-plugin
+      </h1>
       <!-- error -->
       <el-alert v-if="readmeData.error" :title="`Duplicate serial number detected: '${readmeData.error}'. This cause document error.`" type="error"/>
       <!-- tabs -->
@@ -88,6 +91,13 @@ export default {
  .title{
   background: $--color-primary;
   color:#fff;
+  font-size: 22px;
+  padding: 5px 10px;
+  img{
+    width: 30px;
+    border-radius: 21px;
+    vertical-align: middle;
+  }
  }
 </style>
 <style lang="scss">

@@ -76,6 +76,14 @@ module.exports = {
         }
       },
       {
+        test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
+        loader: 'url-loader',
+        options: {
+          limit: 1,
+          name: 'static/img/[name].[hash:7].[ext]'   // 'static/img/[name].[hash:7].[ext]'
+        }
+      },
+      {
         test: /\.(woff2?|eot|ttf|otf)(\?.*)?$/,
         loader: 'url-loader',
         options: {
