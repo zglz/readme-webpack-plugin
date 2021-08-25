@@ -12,7 +12,7 @@
 [视频地址](https://www.bilibili.com/video/BV1fM4y1V7uv): https://www.bilibili.com/video/BV1fM4y1V7uv
 
 
-![](./doc/images/screenshot.jpg)
+![](http://csdn.19991223.com/img/screenshot.png)
 
 <h2 align="center">安装方法</h2>
 
@@ -91,22 +91,47 @@ module.exports = {
 
 3. 删除记录
    
-   ![](./doc/images/del.jpg)
+   ![](http://csdn.19991223.com/img/del.png)
 
 
 
 4. 更新源码
    
-   ![](./doc/images/update.jpg)
+   ![](http://csdn.19991223.com/img/update.png)
 
 
 5. 与已有 markdown 进行整合
 
    通过设置 `base:'BASE-README'` 与已有 markdown 进行整合
    
-   ![](./doc/images/base.jpg)
+   ![](http://csdn.19991223.com/img/base.png)
 
 
 
 <h2 align="center">原理图</h2>
 
+![](./doc/images/framework.jpg)
+
+
+<h2 align="center">VScode代码片段</h2>
+
+ ```
+ "JS readme-webpack-plugin template syntax1": {
+      "scope": "",
+      "prefix": "#",
+      "body": [
+        "/*#### \n #{1 - todo - title}# \n markdown \n ####*/"
+      ],
+      "description": ""
+},
+
+"HTML readme-webpack-plugin template syntax2": {
+      "scope": "",
+      "prefix": "#",
+      "body": [
+        "<!--## \n #{1 - todo - title}# \n markdown \n ###-->"
+      ],
+      "description": ""
+}
+
+ ```
