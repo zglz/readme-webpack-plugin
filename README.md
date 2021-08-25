@@ -85,7 +85,7 @@ module.exports = {
    
    通过标题最后一个参数去关联父记录的id
 
-   ![](./doc/images/associatedrecord.jpg)
+   ![](http://csdn.19991223.com/img/associatedrecord.png)
 
 
 
