@@ -47,7 +47,7 @@ module.exports = {
         mode:'server',          // 模式
         server:{                
           host:'localhost',     // 设置host
-          port: '80',           // 设置port
+          port: '1234',           // 设置port
         },
         output:{
           filename:'README'     // 静态 markdown 文件名
@@ -58,7 +58,7 @@ module.exports = {
 }
 ```
 
-启动项目后，终端会提示一个地址：http://localhost:80
+启动项目后，终端会提示一个地址：http://localhost:1234
 
 ![](./doc/images/terminal.jpg)  
 
