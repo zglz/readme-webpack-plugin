@@ -7,12 +7,15 @@
   <p>我们可以在任何源码中写 markdown，并且提供了一个可交互的markdown管理客户端。</p>
 </div>
 
+<Br/><Br/>
 
 <h2 align="center">视频教程</h2>
 [视频地址](https://www.bilibili.com/video/BV1fM4y1V7uv): https://www.bilibili.com/video/BV1fM4y1V7uv
 
 
 ![](http://csdn.19991223.com/img/screenshot.png)
+
+<Br/><Br/>
 
 <h2 align="center">安装方法</h2>
 
@@ -56,6 +59,11 @@ module.exports = {
 ```
 
 启动项目后，终端会提示一个地址：http://localhost:80
+
+![](./doc/images/terminal.jpg)  
+
+
+<Br/><Br/>
 
 <h2 align="center">使用方式</h2>
 
@@ -101,11 +109,13 @@ module.exports = {
 
 
 5. 与已有 markdown 进行整合
-
-   通过设置 `base:'BASE-README'` 与已有 markdown 进行整合
+   
+   在项目根目录下新建一个BASE-README.md文件，此文件中的markdown自动被收集到客户端中。
    
    ![](http://csdn.19991223.com/img/base.png)
 
+
+<Br/><Br/>
 
 
 <h2 align="center">原理图</h2>
@@ -113,7 +123,15 @@ module.exports = {
 ![](./doc/images/framework.jpg)
 
 
+
+<Br/><Br/>
+
 <h2 align="center">VScode代码片段</h2>
+
+   配置代码提示后，输入‘#’号提示记录语法模板
+
+![](./doc/images/codetip.jpg)
+
 
  ```
  "JS readme-webpack-plugin template syntax1": {
@@ -135,3 +153,6 @@ module.exports = {
 }
 
  ```
+
+
+ 
